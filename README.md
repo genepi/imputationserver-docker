@@ -41,21 +41,21 @@ docker run -d -p 8080:80  -v /home/lukas/imputationserver-data/:/data/ genepi/im
 
 After logging in, you have to open the Admin-Panel:
 
-![Admin Panel](https://raw.githubusercontent.com/lukfor/docker-cloudgene/master/images/admin-panel.png)
+![Admin Panel](https://raw.githubusercontent.com/lukfor/docker-imputationserver/master/images/admin-panel.png)
 
 Click on the *Applications* tab to see all installed applications.
 
-![Applications](https://raw.githubusercontent.com/lukfor/docker-cloudgene/master/images/applications.png)
+![Applications](https://raw.githubusercontent.com/lukfor/docker-imputationserver/master/images/applications.png)
 
 After clicking on *Install App* a new Dialog appears, where you can enter the ID and the URL of a public available reference panel:
 
-![Install App](https://raw.githubusercontent.com/lukfor/docker-cloudgene/master/images/install-app.png)
+![Install App](https://raw.githubusercontent.com/lukfor/docker-imputationserver/master/images/install-app.png)
 
 By clicking on *OK* the installation starts. Depending on your Internet connection and computer resources it could take several minutes.
 
 If the installation was successful, you should see your reference panel in the Reference Panel list when you submit a new job:
 
-![Reference Panel List](https://raw.githubusercontent.com/lukfor/docker-cloudgene/master/images/run.png)
+![Reference Panel List](https://raw.githubusercontent.com/lukfor/docker-imputationserver/master/images/run.png)
 
 ## Public available Reference Panels
 
