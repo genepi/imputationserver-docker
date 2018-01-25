@@ -53,9 +53,7 @@ After clicking on *Install App* a new Dialog appears, where you can enter the ID
 
 ![Install App](../master/images/install-app.png?raw=true)
 
-By clicking on *OK* the installation starts. Depending on your Internet connection and computer resources it could take several minutes.
-
-If the installation was successful, you should see your reference panel in the Reference Panel list when you submit a new job:
+By clicking on *OK* the installation starts. Depending on your Internet connection and computer resources it could take several minutes. If the installation was successful, you should see your reference panel in the Reference Panel list when you submit a new job:
 
 ![Reference Panel List](../master/images/run.png?raw=true)
 
