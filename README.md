@@ -59,6 +59,8 @@ If the installation was successful, you should see your reference panel in the R
 
 ![Reference Panel List](https://raw.githubusercontent.com/lukfor/docker-imputationserver/master/images/run.png)
 
+Since all reference panels are installed in your provided data folder, you can stop and restart your cluster without reinstalling them.
+
 ## Public Reference Panels
 
 Currently, the following Reference Panels are public available:
