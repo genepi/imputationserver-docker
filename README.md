@@ -4,9 +4,11 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/genepi/imputationserver.svg)](https://hub.docker.com/r/genepi/imputationserver)
 ![Travis](https://img.shields.io/travis/genepi/imputationserver-docker.svg)
 
+This repository provides a Docker Image to run your own instance of the popular [Michigan Imputation Server](https://imputationserver.sph.umich.edu). The workflow itself is executed with the [Cloudgene](http://cloudgene.uibk.ac.at) workflow system for Hadoop MapReduce. 
+
 ## Requirements
 
-Docker must be installed on your local computer. Please checkout the [step by step guide](https://docs.docker.com/engine/installation/linux/ubuntu/) to install the latest version.
+[Docker](http://docker.io) must be installed on your local computer. Please checkout the [step by step guide](https://docs.docker.com/engine/installation/linux/ubuntu/) to install the latest version.
 
 
 ## Start your own Imputation Server
@@ -39,7 +41,7 @@ docker run -d -p 8080:80  -v /home/lukas/imputationserver-data/:/data/ genepi/im
 
 **Important**: It's recommended to start the Docker image from a computer with a HDD having at least 100 GB free space and a fast Internet connection (Reference panel size is about **14 GB**).
 
-After logging in, you have to open the Admin-Panel:
+After logging in, you have to open the *Admin-Panel*:
 
 ![Admin Panel](https://raw.githubusercontent.com/lukfor/docker-imputationserver/master/images/admin-panel.png)
 
@@ -57,21 +59,27 @@ If the installation was successful, you should see your reference panel in the R
 
 ![Reference Panel List](https://raw.githubusercontent.com/lukfor/docker-imputationserver/master/images/run.png)
 
-## Public available Reference Panels
+## Public Reference Panels
 
 Currently, the following Reference Panels are public available:
 
 ### Hapmap2
 
-**ID:** hapmap2
-**URL:** https://imputationserver.sph.umich.edu/static/downloads/releases/hapmap2-1.0.0.zip
+- **ID:** hapmap2
+- **URL:** https://imputationserver.sph.umich.edu/static/downloads/releases/hapmap2-1.0.0.zip
 
 ### 1000 Genomes Phase 3
 
-**ID:** 1000genomes-phase3
-**URL:** https://imputationserver.sph.umich.edu/static/downloads/releases/1000genomes-phase3-1.0.0.zip
+- **ID:** 1000genomes-phase3
+- **URL:** https://imputationserver.sph.umich.edu/static/downloads/releases/1000genomes-phase3-1.0.0.zip
+
+## Citation
+
+Please cite this paper if you use Michigan Imputation Server:
+
+> Das S, Forer L, Schönherr S, Sidore C, Locke AE, Kwong A, Vrieze S, Chew EY, Levy S, McGue M, Schlessinger D, Stambolian D, Loh PR, Iacono WG, Swaroop A, Scott LJ, Cucca F, Kronenberg F, Boehnke M, Abecasis GR, Fuchsberger C. [Next-generation genotype imputation service and methods](https://www.ncbi.nlm.nih.gov/pubmed/27571263). Nature Genetics 48, 1284–1287 (2016).
 
 
 ## Contact
 
-Feel free to contact Sebastian Schoenherr or Lukas Forer in case of any problems.
+Feel free to contact [us](https://imputationserver.sph.umich.edu/start.html#!pages/contact) in case of any problems.
