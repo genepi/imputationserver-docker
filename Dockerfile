@@ -1,9 +1,10 @@
-FROM lukfor/cloudgene
+FROM genepi/cloudgene
 
 MAINTAINER Sebastian Schoenherr <sebastian.schoenherr@i-med.ac.at>, Lukas Forer <lukas.forer@i-med.ac.at>
 
 # Install R Packages
 RUN R -e "install.packages('RColorBrewer', repos = 'http://cran.rstudio.com' )"
+# TODO: ask Seb. needed? works also without package. could ne removed from R report?
 # RUN R -e "install.packages('geneplotter', repos = 'http://cran.rstudio.com' )"
 
 # Add imputationserver specific pages

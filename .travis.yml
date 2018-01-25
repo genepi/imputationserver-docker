@@ -1,0 +1,10 @@
+sudo: required #is required to use docker service in travis
+
+services:
+  - docker # required, but travis uses older version of docker :(
+
+script:
+  - make test
+
+after_success:
+  - docker --version  # document the version travis is using
