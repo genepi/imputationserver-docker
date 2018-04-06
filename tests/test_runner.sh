@@ -6,7 +6,7 @@ set -x
 
 # start docker image
 docker run -d -p 8080:80 --name test genepi/imputationserver
-sleep 90
+sleep 180
 
 
 # check if cloudgene is running on host port
