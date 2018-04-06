@@ -4,6 +4,7 @@ services:
   - docker # required, but travis uses older version of docker :(
 
 script:
+  - docker --version
   - make test
 
 after_success:
