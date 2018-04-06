@@ -8,6 +8,8 @@ set -x
 docker run -d -p 8080:80 --name test genepi/imputationserver
 sleep 180
 
+# show logs for debugging
+docker logs test
 
 # check if cloudgene is running on host port
 curl -v -k --fail http://localhost:8080/api/v2/server/version.svg
