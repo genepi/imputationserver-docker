@@ -1,6 +1,6 @@
 FROM genepi/cloudgene
 
-MAINTAINER Oskar Vidarsson <oskar.vidarsson@uib.no>
+MAINTAINER Sebastian Schoenherr <sebastian.schoenherr@i-med.ac.at>, Lukas Forer <lukas.forer@i-med.ac.at>
 
 # Install dependencies for R packages
 RUN apt update && \
