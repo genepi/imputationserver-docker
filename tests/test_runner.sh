@@ -6,7 +6,7 @@ set -x
 
 # start docker image
 docker run -d -p 8080:80 --name test genepi/imputationserver
-sleep 180
+sleep 900
 
 # show logs for debugging
 docker logs test

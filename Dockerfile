@@ -1,4 +1,4 @@
-FROM genepi/cloudgene
+FROM genepi/cloudgene:v1.30.5
 
 MAINTAINER Sebastian Schoenherr <sebastian.schoenherr@i-med.ac.at>, Lukas Forer <lukas.forer@i-med.ac.at>
 
