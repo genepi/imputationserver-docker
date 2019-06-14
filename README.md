@@ -16,7 +16,7 @@ This repository provides a Docker Image to run your own instance of the popular 
 After the successful installation of Docker, all you need to do is:
 
 ```
- docker run -d -p 8080:80 genepi/imputationserver:v1.1.15
+ docker run -d -p 8080:80 genepi/imputationserver:v1.1.16
 ```
 After about 1 minute your Imputation Server instance is ready and you are able to access it on http://localhost:8080.
 
@@ -27,7 +27,7 @@ Login as **admin** with the default admin password **admin1978**. You can now st
 Docker images are not persistent, all jobs submitted inside one session will be lost after restart. To keep your jobs, results and installed reference panels between sessions, you need to mount a folder from your host to the container:
 
 ```
-docker run -d -p 8080:80  -v /home/lukas/imputationserver-data/:/data/ genepi/imputationserver:v1.1.15
+docker run -d -p 8080:80  -v /home/lukas/imputationserver-data/:/data/ genepi/imputationserver:v1.1.16
 ```
 This folder contains all results of your jobs, all installed reference panels and all configurations. To restart a session, you have to use the same folder. It is also possible to use different folders for different projects or tests.
 
