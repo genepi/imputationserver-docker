@@ -16,7 +16,7 @@ This repository provides a Docker Image to run your own instance of the popular 
 After the successful installation of Docker, all you need to do is:
 
 ```
- docker run -d -p 8080:80 genepi/imputationserver:v1.2.2
+ docker run -d -p 8080:80 genepi/imputationserver:v1.2.4
 ```
 After about 1 minute your Imputation Server instance is ready and you are able to access it on http://localhost:8080.
 
@@ -27,7 +27,7 @@ Login as **admin** with the default admin password **admin1978**. You can now st
 Docker images are not persistent, all jobs submitted inside one session will be lost after restart. To keep your jobs, results and installed reference panels between sessions, you need to mount a folder from your host to the container:
 
 ```
-docker run -d -p 8080:80  -v /home/lukas/imputationserver-data/:/data/ genepi/imputationserver:v1.2.2
+docker run -d -p 8080:80  -v /home/lukas/imputationserver-data/:/data/ genepi/imputationserver:v1.2.4
 ```
 This folder contains all results of your jobs, all installed reference panels and all configurations. To restart a session, you have to use the same folder. It is also possible to use different folders for different projects or tests.
 
@@ -36,7 +36,7 @@ This folder contains all results of your jobs, all installed reference panels an
 This image is delivered with the Hapmap2 Reference Panel. To install additional reference panels  (e.g. 1000 Genomes Phase3), you have to start a persistent cluster:
 
 ```
-docker run -d -p 8080:80  -v /home/lukas/imputationserver-data/:/data/ genepi/imputationserver:vv1.2.2
+docker run -d -p 8080:80  -v /home/lukas/imputationserver-data/:/data/ genepi/imputationserver:v1.2.4
 ```
 
 **Important**: It's recommended to start the Docker image from a computer with a HDD having at least 100 GB free space and a fast Internet connection (Reference panel size is about **14 GB**).
@@ -66,12 +66,12 @@ Currently, the following Reference Panels are public available:
 ### Hapmap2
 
 - **ID:** hapmap2
-- **URL:** https://imputationserver.sph.umich.edu/static/downloads/releases/hapmap2-1.0.0.zip
+- **URL:** https://imputationserver.sph.umich.edu/static/downloads/releases/hapmap2-2.0.0.zip
 
 ### 1000 Genomes Phase 3
 
 - **ID:** 1000genomes-phase3
-- **URL:** https://imputationserver.sph.umich.edu/static/downloads/releases/1000genomes-phase3-1.0.0.zip
+- **URL:** https://imputationserver.sph.umich.edu/static/downloads/releases/1000genomes-phase3-2.0.0.zip
 
 ## Citation
 
