@@ -16,7 +16,7 @@ This repository provides a Docker Image to run your own instance of the popular 
 After the successful installation of Docker, all you need to do is:
 
 ```
- docker run -d -p 8080:80 genepi/imputationserver:v1.2.4
+ docker run -d -p 8080:80 genepi/imputationserver:v1.2.7
 ```
 After about 1 minute your Imputation Server instance is ready and you are able to access it on http://localhost:8080.
 
