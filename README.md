@@ -71,7 +71,7 @@ Currently, the following Reference Panels are public available:
 ### 1000 Genomes Phase 3
 
 - **ID:** 1000genomes-phase3
-- **URL:** https://imputationserver.sph.umich.edu/static/downloads/releases/1000genomes-phase3-2.0.0.zip
+- **URL:** https://imputationserver.sph.umich.edu/static/downloads/releases/1000genomes-phase3-3.0.0.zip
 
 ## Citation
 
